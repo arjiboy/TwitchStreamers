@@ -43,10 +43,13 @@ li:hover{
 
 }
 .strmr #pic{
-	max-width: 4%;
+	flex-basis: 4%;
 }
-.strmr #name, .strmr #status, .strmr #game{
-	flex-basis: 32%;
+.strmr #name, .strmr #game{
+	flex-basis: 28%;
+}
+.strmr #status{
+	flex-basis: 40%;
 }
 img{
 	max-width: 100%;
@@ -55,4 +58,20 @@ img{
 }
 .selected{
 	background: goldenrod;
+}
+
+@media (max-width: 768px){
+	.strmr {
+		flex-wrap: wrap;
+	}
+	.strmr #pic{
+		flex-basis: 20%;
+	}
+	.strmr #name, .strmr #game{
+		flex-basis: 40%;
+	}
+	.strmr #status{
+		flex-basis: 100%;
+		border-bottom: #3498db 2px solid;
+	}	
 }
