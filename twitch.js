@@ -9,13 +9,11 @@ function load(){
 	streamers.map( function(s){
 		$.getJSON("https://wind-bow.gomix.me/twitch-api/streams/" + s + "?callback=?",function(data){
 			if (data.stream == null){
-				setTimeout(function(){
-					document.getElementById('results').innerHTML += 
+				document.getElementById('results').innerHTML += 
 					"<div class='strmr' id='offline'><div id='pic'><img src=" + 'https://dummyimage.com/50x50/ecf0e7/5c5457.jpg&text=0x3F'
 					+ "></div><h1 id='name'>" + s
 					+ "</h1><h1 id='game'>" + "OFFLINE"
 					+ "</h1><h1 id='status'>" + "" + "</h1></div>"
-				},-100)
 			}else{
 				document.getElementById('results').innerHTML += 
 					"<div class='strmr' id='online'><div id='pic'><img src='" + data.stream.channel.logo

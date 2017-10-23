@@ -7,13 +7,16 @@ body{
 	font-size: 100%;
 	font-family: Helvetica;
 	height: 100vh;
-	background: purple;
+	background: #9b59b6;
 
+}
+header{
+	background: #7f8c8d;
 }
 #container{
 	max-width: 90%;
 	margin: 0 auto;
-	border: 1px solid black;
+	border: 3px solid #2c3e50;
 
 }
 
@@ -25,13 +28,14 @@ ul{
 li{
 	margin: 5px;
 	padding: 5px;
+	cursor: pointer;
 }
 li:hover{
 	background: goldenrod;
 }
 .strmr > * {
-
-	border: 1px solid black;
+	background: #bdc3c7;
+	border: 1px solid #ecf0f1;
 }
 .strmr{
 	display: flex;
